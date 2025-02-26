@@ -1,0 +1,114 @@
+@use '/sass/abstracts/variables' as var;
+@use '/sass/abstracts/mixins';
+@use '/sass/base/reset';
+@use '/sass/layout/layout';
+
+html {
+    width: 100%;
+    body {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 16px;
+      box-sizing: border-box;
+      background-image: url('../../img/hero@2x.png');
+      background-size: 55%;
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+}
+
+  
+.hero {
+    margin-bottom: 40px;
+
+    .hero__contain {
+        max-width: 55%;
+        margin-bottom: 40px;
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 6.5rem;
+            line-height: 6rem;
+            margin: 0;
+            span {
+                color: var.$secondary;
+            }
+        }
+        p {
+            margin-bottom: 20px;
+            width: 80%;
+            color: var.$tertiary;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        a {
+            display: inline-block;
+            padding: 16px 34px;
+            background-color: var.$secondary;
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+        }
+    }
+    .hero__numbers {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            span.hero__number {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 2rem;
+                color: var.$primary;
+            }
+            span {
+                
+                &:last-child {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.8rem;
+                    color: var.$tertiary;
+                }     
+            }
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        padding: 25px;
+        background-color: white;
+        img {
+            width: 20%;
+        }
+        
+        h3 {
+            margin: 8px 0;
+            font-family: 'Poppins', sans-serif;
+            color: var.$primary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: normal;
+            color: var.$tertiary;
+            margin: 0;
+        }
+    }
+}
