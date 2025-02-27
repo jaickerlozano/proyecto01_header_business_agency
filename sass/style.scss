@@ -51,6 +51,9 @@ html {
             text-decoration: none;
             font-size: 1rem;
             color: white;
+            &:hover {
+                background-color: var.$primary;
+            }
         }
     }
     .hero__numbers {
@@ -61,6 +64,7 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            animation: var.$pulse 3s infinite;
             
             span.hero__number {
                 font-family: 'Bebas Neue', sans-serif;

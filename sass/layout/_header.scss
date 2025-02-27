@@ -9,6 +9,12 @@ header {
 
     figure {
         margin: 0;
+        img {
+            transition-duration: 1s;
+            &:hover {
+                scale: 1.1;
+            }
+        }
         figcaption {
             display: none;
         }
@@ -28,6 +34,9 @@ header {
                     font-size: 18px;
                     line-height: 27px;
                     letter-spacing: 0%; 
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }  
